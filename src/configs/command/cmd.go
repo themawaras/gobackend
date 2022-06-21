@@ -2,7 +2,7 @@ package command
 
 import (
 	"github.com/backendGo-learn/src/configs/serve"
-	database "github.com/backendGo-learn/src/database"
+	database "github.com/backendGo-learn/src/database/gorm"
 	"github.com/spf13/cobra"
 )
 

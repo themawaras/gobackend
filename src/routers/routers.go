@@ -3,7 +3,7 @@ package routers
 import (
 	"net/http"
 
-	"github.com/backendGo-learn/src/configs/database"
+	database "github.com/backendGo-learn/src/database/gorm"
 	"github.com/backendGo-learn/src/modules/v1/auth"
 	"github.com/backendGo-learn/src/modules/v1/users"
 	"github.com/backendGo-learn/src/modules/v1/vehicles"
