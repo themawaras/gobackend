@@ -1,5 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/fthema/go/src/github.com/backendGo-learn'
+mkdir -p ./build && CGO_ENABLED=0 GOOS=darwin go build -o "./build/goback"
 make: Leaving directory `/Users/fthema/go/src/github.com/backendGo-learn'
  
-make: *** No targets.  Stop.
-
