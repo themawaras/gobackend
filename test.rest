@@ -44,7 +44,7 @@ DELETE http://localhost:8088/vehicle/delete/11 HTTP/1.1
 ### SORT VEHICLE BY YEAR
 GET http://localhost:8088/vehicle/year?year=2017 HTTP/1.1
 
-### GET DATA USERS
+### GET ALL DATA USERS
 GET http://localhost:8088/user/ HTTP/1.1
 
 ### ADD DATA USER
@@ -65,5 +65,5 @@ Content-Type: : application/json
 
 {
     "username" : "toto",
-    "password" : "12345"
+    "password" : "12345",
 }
