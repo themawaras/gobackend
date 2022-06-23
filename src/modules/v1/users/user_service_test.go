@@ -9,21 +9,6 @@ import (
 	"github.com/stretchr/testify/mock"
 )
 
-func TestFindAll(t *testing.T) {
-	var repo = mocks.RepoMock{Mock: mock.Mock{}}
-	var service = user_service{&repo}
-
-	var dataUser models.Users
-
-	repo.Mock.On("FindAll").Return(&dataUser, nil)
-	data, err := service.FindAll()
-
-	users := data.Message
-
-	assert.Equal(t, "OK", users, "Wrong")
-	assert.Nil(t, err)
-}
-
 func TestFindByUsername(t *testing.T) {
 	var repo = mocks.RepoMock{Mock: mock.Mock{}}
 	var service = user_service{&repo}
